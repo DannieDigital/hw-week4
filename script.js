@@ -5,10 +5,10 @@ var timeEl = document.querySelector("#time")
 var messageEl = document.querySelector("#message")
 var storedScores;
 var scoreList = [];
-var answerOne = document.getElementById("answerOne");
-var answerTwo = document.getElementById("answerTwo");
-var answerThree = document.getElementById("answerThree");
-var answerFour = document.getElementById("answerFour");
+var answerOne = document.getElementById("");
+var answerTwo = document.getElementById("");
+var answerThree = document.getElementById("");
+var answerFour = document.getElementById("");
 
 // Set timer for quiz and alert user when time has ran out. Used example from 08-Ins_Timers-Intervals
 function setTime() {

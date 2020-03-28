@@ -1,6 +1,6 @@
 # Homework Week 3
 
-I was not succesfully able to move  through questions base on the open source code I found for this activity. I added some CSS flavor to the the quiz but I continue to struggle with arrays etc. 
+I was not succesfully able to move  through questions base on the open source code I found for this activity. I added some CSS flavor to the the quiz butI was not able to add functionality to the quiz. 
 
 # 04 Web APIs: Code Quiz
 

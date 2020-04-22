@@ -8,19 +8,32 @@ h1, h2 {
     text-align: center;
 }
 
-#startButton{
-    background-color: #563d7c;
+#startBtn{
+    background-color: white;
     text-align: center;
     width: 200px;
 }
 
 #buttonDiv{
     text-align: center;
+    
+}
+.btn {
+    background-color: #563d7c;
+    color: white;
 }
 
 #highscore-link a:hover{
     text-decoration-color: none;
     color: black;  
+}
+
+.rules {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 60%;
+    align-content: center;
 }
 
 #rules {
@@ -42,5 +55,19 @@ h1, h2 {
     margin: 25px 25px 25px 25px;
     padding: 25px 25px 25px 25px;
     border-top: 25px;
+    color: #563d7c;
+    background-color: whitesmoke;
+}
+
+#questionBtn {
+    background-color: #563d7c;
+    color: white;
+    text-align: center;
+    width: 200px;
+}
+
+ul, li {
+    list-style-type: none;
+   
 }
 

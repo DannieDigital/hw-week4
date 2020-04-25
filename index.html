@@ -18,8 +18,9 @@
     <nav class="navbar navbar-inverse">
         <div class="container">
             <div class="navbar-header">
-                <a  id="highscore-link" href="highScores.html">View High Scores</a></div>
-                    <div class="nav navbar-nav navbar-right" id="time">Time: </div>
+                <a  id="highscore-link" href="highScores.html">View High Scores</a>
+                    </div>
+                    <div class="nav navbar-nav navbar-right" id="time">Time: 
                         </div>
                             </div>
                          </nav>
@@ -35,27 +36,40 @@
                             <div id ="quiz">
                                 
                         <h2 class="rules">Game Rules</h2>
-                        <div class="rules">
-                             <ol>
-                                <li>Click the start button to begin quiz.</li>
-                                <li>Timer starts when presented with the first question.</li>
-                                <li>Any questions answered incorrectly time will be subtracted from the clock.</li>
-                                <li>Once all questions are answered or the timer reaches 0 then the game is over.</li>
-                                <li>When the game is over then you can save your initials and score.</li>
-                            </ol> 
+                        <div class="show" id="rules">
+                             <ul>
+                                <li class="rules" >Click the start button to begin quiz.</li>
+                                <li class="rules">Timer starts when presented with the first question.</li>
+                                <li class="rules">Any questions answered incorrectly time will be subtracted from the clock.</li>
+                                <li class="rules">Once all questions are answered or the timer reaches 0 then the game is over.</li>
+                                <li class="rules">When the game is over then you can save your initials and score.</li>
+                            </ul> 
                             <div class="col-md-12" id="buttonDiv">
-                                <button type="button" class="btn btn-light">Start Quiz</button> 
-                               
+                                <button  data-btn="answerBtn" id="buttonDiv" type="button" class="btn btn-light">Start Quiz</button> 
                                       </div>
                                       
-                                      <div id="quizQuestions"></div>
+                                      <div class="hide" id="questionOne">
+                                       <ul id="questionOne">
+                                           <li id="textQuestion"> <strong> HTML stand for______?</strong></li>
+                                           <li><button id="answerBtn" data-btn="answerBtn" type="button" class="">How To Meet Ladies"</button></li>
+                                           <li><button id="answerBtn" data-btn="answerBtn" type="button" class="">"Holy Turkey Monkey Language"</button></li>
+                                           <li><button id="answerBtn" data-btn="answerBtn" type="button" class="">Hyper Text Markup Language</button></li>
+                                           <li><button id="answerBtn" data-btn="answerBtn" type="button" class="">Hyper Touch Markup Language</button></li>
+                                       </ul>
+                                      </div>
+                                      <div  class="hide" id="questionTwo">
+                                        <ul id="questionTwo">
+                                            <li id="textQuestion"> <strong>CSS means:</strong></li>
+                                            <li><button id="answerBtn" data-btn="answerBtn" type="button" class="">Cute Sandy Storm"</button></li>
+                                            <li><button id="answerBtn" data-btn="answerBtn" type="button" class="">"Cascading Style Sheet"</button></li>
+                                            <li><button id="answerBtn" data-btn="answerBtn" type="button" class="">Candy Sugar & Spice</button></li>
+                                            <li><button id="answerBtn" data-btn="answerBtn" type="button" class="">Country Style Steak</button></li>
+                                        </ul>
+                                      </div>
                             </div>
                             </div>
                             </div>
-                    
-                           
-                 
-            </section>
+                     </section>
             </div>
         </div>
             </div>

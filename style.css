@@ -13,6 +13,10 @@ h1, h2 {
 }
 
 
+.hideTwo {
+    display: none;
+}
+
 #startBtn{
     background-color: white;
     text-align: center;
@@ -29,6 +33,14 @@ h1, h2 {
     color: white;
 }
 #answerBtn:hover {
+    background-color: gray;
+    color: white;
+}
+#answerBtnOne {
+    background-color: #563d7c;
+    color: white;
+}
+#answerBtnOne:hover {
     background-color: gray;
     color: white;
 }

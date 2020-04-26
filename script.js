@@ -1,5 +1,3 @@
-
-
 $(document).ready(function(){
   $("#buttonDiv").click(function(){
     $(this).hide();
@@ -17,21 +15,34 @@ var quizRules = document.getElementById("rules");
 $(startQuiz).on("click", questions);
 $(questionOne).on("click", questions);
 $(questionTwo).on("click", questions);
-
-
-
+$(answerBtn).on("click", questions);
 
  function questions (){ 
-if (questionOne.className === "hide"){
+if (questionOne.className === "hide" ){
     questionOne.className="";
   } 
 }
 
-// $("#answerBtnOne").click(function(){
-//   if (answerBtnOne === "Hyper Text Markup Language");
-//   console.log(answerBtnOne)
-// }
-// )};
+  $(function(){
+  $(".rightAnswer").click(function(){
+    document.getElementById("results").innerHTML ="Correct!";
+    $(this).hide(200);
+    $("#questionOne").hide();
+    $(".hideTwo").show();
+  });
+});
+
+
+
+$(function(){
+  $(".wrongAnswer").click(function(){
+    document.getElementById("results").innerHTML ="Wrong!";
+    $(this).hide(200);
+    $("#questionOne").hide();
+    $(".hideTwo").show();
+  });
+});
+
 
 
 

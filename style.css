@@ -17,6 +17,11 @@ h1, h2 {
     display: none;
 }
 
+.hideThree {
+    display: none;
+}
+
+
 #startBtn{
     background-color: white;
     text-align: center;

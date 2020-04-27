@@ -23,31 +23,121 @@ if (questionOne.className === "hide" ){
   } 
 }
 
+// functions for question one 
   $(function(){
   $(".rightAnswer").click(function(){
     document.getElementById("results").innerHTML ="Correct!";
-    $(this).hide(200);
-    $("#questionOne").hide();
-    $(".hideTwo").show();
+    if (".rightAnswer"){
+      setTimeout(function() { $("#questionOne").hide(); }, 2000);
+     
+    } 
+    
+      
   });
 });
-
-
+  
+$(function(){
+  $(".rightAnswer").click(function(){
+    document.getElementById("results").innerHTML ="Correct!";
+    if (".rightAnswer"){
+      setTimeout(function() { $(".hideTwo").show(); }, 2000); 
+    } 
+      
+  });
+});
 
 $(function(){
   $(".wrongAnswer").click(function(){
     document.getElementById("results").innerHTML ="Wrong!";
-    $(this).hide(200);
-    $("#questionOne").hide();
-    $(".hideTwo").show();
+    if (".wrongAnswer"){
+      setTimeout(function() { $("#questionOne").hide(); }, 2000);
+     
+    } 
   });
 });
 
+$(function(){
+  $(".wrongAnswer").click(function(){
+    document.getElementById("results").innerHTML ="Wrong!";
+    if (".wrongAnswer"){
+      setTimeout(function() { $(".hideTwo").show(); }, 2000); 
+    } 
+      
+  });
+});
 
+// Functions for question two
 
+$(function(){
+  $(".rightAnswerTwo").click(function(){
+    document.getElementById("results").innerHTML ="Correct!";
+    if (".rightAnswerTwo"){
+      setTimeout(function() { $("#questionTwo").hide(); }, 2000);
+    } 
+  });
+});
+  
+$(function(){
+  $(".rightAnswerTwo").click(function(){
+    document.getElementById("results").innerHTML ="Correct!";
+    if (".rightAnswerTwo"){
+      setTimeout(function() { $(".hideThree").show(); }, 2000); 
+    } 
+      
+  });
+});
 
+$(function(){
+  $(".wrongAnswerTwo").click(function(){
+    document.getElementById("results").innerHTML ="Wrong!";
+    if (".wrongAnswerTwo"){
+      setTimeout(function() { $("#questionTwo").hide(); }, 2000);
+     
+    } 
+  });
+});
 
+$(function(){
+  $(".wrongAnswerTwo").click(function(){
+    document.getElementById("results").innerHTML ="Wrong!";
+    if (".wrongAnswerTwo"){
+      setTimeout(function() { $(".hideThree").show(); }, 2000); 
+    } 
+      
+  });
+});
 
+// Functions for question three
+
+$(function(){
+  $(".rightAnswerThree").click(function(){
+    document.getElementById("results").innerHTML ="Correct!";
+  });
+});
+  
+$(function(){
+  $(".wrongAnswerThree").click(function(){
+    document.getElementById("results").innerHTML ="Wrong!";
+    
+  });
+});
+
+// Timer
+var timerEl = document.querySelector("#time")
+timerSeconds = setInterval(clockTick, 5000);
+
+ 
+timerEl.textContent = timerSeconds;
+
+function clockTick() {
+   // update time
+   time--;
+   timerEl.textContent = time;
+   // check if user ran out of time
+   if (time <= 0) {
+     quizEnd();
+   }
+ }
 
 // //create a variable that hold the questions section from the html
 // var quizQuestions = document.querySelector("#quiz")
@@ -119,18 +209,3 @@ $(function(){
 
 // startQuiz(quiz)
 
-// var timerEl = document.querySelector("#time")
-// timerSeconds = setInterval(clockTick, 5000);
-
- 
-// timerEl.textContent = timerSeconds;
-
-// function clockTick() {
-//    // update time
-//    time--;
-//    timerEl.textContent = time;
-//    // check if user ran out of time
-//    if (time <= 0) {
-//      quizEnd();
-//    }
-//  }

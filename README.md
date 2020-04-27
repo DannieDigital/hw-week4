@@ -1,6 +1,6 @@
 # Homework Week 3
 
-I was not succesfully able to move  through questions base on the open source code I found for this activity. I added some CSS flavor to the the quiz butI was not able to add functionality to the quiz. 
+I was able to add functionality to the quiz by using multiple functions. I know the route I took is not "DRY" but this method allow me to understand functions and it behavior better. 
 
 # 04 Web APIs: Code Quiz
 
